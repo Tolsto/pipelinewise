@@ -6,6 +6,7 @@ RUN apt-get -qq update \
     && apt-get -qqy --no-install-recommends install \
         apt-utils \
         alien \
+        git \
         gnupg \
         libaio1 \
         mbuffer \
@@ -21,6 +22,8 @@ RUN wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | apt-key add -
         mongodb-database-tools \
     && rm -rf /var/lib/apt/lists/*
 
+RUN useradd -u 1000 -m -d /app user
+USER 1000
 COPY singer-connectors/ /app/singer-connectors/
 COPY Makefile /app
 
@@ -37,7 +40,6 @@ COPY . /app
 
 RUN echo "setup pipelinewise" \
     && cd /app \
-    && make pipelinewise_no_test_extras -e pw_acceptlicenses=y\
-    && ln -s /root/.pipelinewise /app/.pipelinewise
+    && make pipelinewise_no_test_extras -e pw_acceptlicenses=y
 
 ENTRYPOINT ["/app/entrypoint.sh"]

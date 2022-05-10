@@ -1,1 +1,1 @@
-pipelinewise-tap-postgres==1.8.3
+git+https://github.com/Tolsto/pipelinewise-tap-postgres@c12f16de947011e90c82cf39b179a51a554bb0f2#egg=pipelinewise-tap-postgres
