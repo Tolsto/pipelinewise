@@ -11,12 +11,14 @@ RUN apt-get -qq update \
         libaio1 \
         mbuffer \
         wget \
+        build-essential \
+        libpq-dev \
     && rm -rf /var/lib/apt/lists/* \
     && pip install -U --no-cache-dir pip
 
 # Add Mongodb ppa
 RUN wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | apt-key add - \
-    && echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse" | tee /etc/apt/sources.list.d/mongodb.list \
+    && echo "deb https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse" | tee /etc/apt/sources.list.d/mongodb.list \
     && apt-get -qq update \
     && apt-get -qqy --no-install-recommends install \
         mongodb-database-tools \
