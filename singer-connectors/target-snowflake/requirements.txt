@@ -1,1 +1,1 @@
-git+https://github.com/Tolsto/pipelinewise-target-snowflake@abe11ba2e0fc6c96bbc796e80e09a0d3dccd48dc#egg=pipelinewise-target-snowflake
+git+https://github.com/Tolsto/pipelinewise-target-snowflake@30640fd8ff1b8615eec1067d02106b739515b090#egg=pipelinewise-target-snowflake
