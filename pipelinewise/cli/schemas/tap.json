@@ -233,7 +233,7 @@
                 "update_buffer_size": {
                   "type": "integer",
                   "minimum": 1,
-                  "maximum": 1000
+                  "maximum": 10000
                 },
                 "await_time_ms": {
                   "type": "integer",
