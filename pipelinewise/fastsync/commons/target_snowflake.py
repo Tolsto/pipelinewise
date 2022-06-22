@@ -244,6 +244,7 @@ class FastSyncTargetSnowflake:
             f'{utils.SDC_EXTRACTED_AT} TIMESTAMP_NTZ',
             f'{utils.SDC_BATCHED_AT} TIMESTAMP_NTZ',
             f'{utils.SDC_DELETED_AT} VARCHAR',
+            '_pii_deleted_at TIMESTAMP_NTZ',
         ]
 
         # We need the sort the columns for some taps( for now tap-s3-csv)

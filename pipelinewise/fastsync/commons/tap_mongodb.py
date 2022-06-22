@@ -304,6 +304,7 @@ class FastSyncTapMongoDB:
                                     '%Y-%m-%d %H:%M:%S.%f'
                                 ),
                                 utils.SDC_DELETED_AT: None,
+                                '_pii_deleted_at': None
                             }
                         )
                     except TypeError:
