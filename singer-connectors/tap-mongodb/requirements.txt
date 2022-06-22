@@ -1,1 +1,1 @@
-git+https://github.com/Tolsto/pipelinewise-tap-mongodb@9fa77e11a95797f1708f9623ff585360f698766e#egg=pipelinewise-tap-mongodb
+git+https://github.com/Tolsto/pipelinewise-tap-mongodb@9e8bc5d5eebdb1e8feb7b3578ead12635e6dc067#egg=pipelinewise-tap-mongodb
