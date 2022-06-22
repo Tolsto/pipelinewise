@@ -237,6 +237,7 @@ class FastSyncTargetSnowflake:
                 c.startswith(utils.SDC_EXTRACTED_AT)
                 or c.startswith(utils.SDC_BATCHED_AT)
                 or c.startswith(utils.SDC_DELETED_AT)
+                or c.startswith('_pii_deleted_at')
             )
         ]
 
