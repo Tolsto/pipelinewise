@@ -352,6 +352,7 @@ class FastSyncTapMongoDB:
             (utils.SDC_EXTRACTED_AT, 'datetime'),
             (utils.SDC_BATCHED_AT, 'datetime'),
             (utils.SDC_DELETED_AT, 'string'),
+            ('_pii_deleted_at', 'string'),
         )
 
     def fetch_current_log_pos(self) -> Dict:
