@@ -1,1 +1,1 @@
-git+https://github.com/Tolsto/pipelinewise-tap-postgres@c12f16de947011e90c82cf39b179a51a554bb0f2#egg=pipelinewise-tap-postgres
+git+https://github.com/Tolsto/pipelinewise-tap-postgres@3242cf9cfa312fb0a084611a722c79ee7e3dbbe1#egg=pipelinewise-tap-postgres
