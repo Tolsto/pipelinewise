@@ -13,6 +13,8 @@ RUN apt-get -qq update \
         wget \
         build-essential \
         libpq-dev \
+        vim \
+        nano \
     && rm -rf /var/lib/apt/lists/* \
     && pip install -U --no-cache-dir pip
 
